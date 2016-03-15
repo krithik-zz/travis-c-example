@@ -59,6 +59,7 @@ all: clean default
 default: test2 test1
 
 test1: 
+	touch hello.txt
 	touch $(RUNNER1)
 	ruby $(UNITY_ROOT)/auto/generate_test_runner.rb test/TestProductionCode.c  $(RUNNER1)
 	$(C_COMPILER) $(CFLAGS) $(INC_DIRS) $(SYMBOLS) $(SRC_FILES1) -o $(TARGET1)
