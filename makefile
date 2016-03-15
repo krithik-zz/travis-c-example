@@ -23,7 +23,7 @@ else
 	TARGET_EXTENSION=.out
 endif
 
-UNITY_ROOT=/home/krithik/git/github/Unity/
+UNITY_ROOT=Unity/
 C_COMPILER=gcc
 
 CFLAGS=-std=c99
